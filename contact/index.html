@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/"
+                ><img
+                    src="/images/logo.svg"
+                    alt="cookie"
+            /></a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li class="dropdown">
+                    <p class="dropbtn">
+                        Recipes
+                        <!-- <img class="arrow-icon" src="/images/down-arrow-icon.svg" alt="Down Arrow"> -->
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20px"
+                            viewBox="0 -960 960 960"
+                            width="20px"
+                        >
+                            <path
+                                d="M480-333 240-573l51-51 189 189 189-189 51 51-240 240Z"
+                            />
+                        </svg>
+                    </p>
+                    <ul class="dropdown-content">
+                        <li>
+                            <a href="/article/danish-butter-cookies"
+                                >Danish Butter Cookies</a
+                            >
+                        </li>
+                        <li>
+                            <a href="/article/cream-cheese-cookies"
+                                >Cream Cheese Chocolate Chip Cookies</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/sources">Sources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="full-height">
+        <h1>Contact Us</h1>
+        <form class="contact-form"
+        action="https://formspree.io/f/mjkvlwln"
+        method="POST"
+      >
+        <label class="formspree-label">
+          Your email:
+          <input type="email" name="email">
+        </label>
+        <label class="formspree-label">
+          Your message:
+          <textarea name="message" ></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
+    </main>
+    <footer>
+        <p>&copy;2024 Nikita Lobanov</p>
+    </footer>
+</body>
+</html>
